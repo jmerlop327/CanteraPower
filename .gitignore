@@ -9,3 +9,7 @@ Thumbs.db
 obtener_token.py
 obtener_token_manual.py
 promp_inicial.md
+
+# Markdown excepto USAGE.MD
+*.md
+!USAGE.MD

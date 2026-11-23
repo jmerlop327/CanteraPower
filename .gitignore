@@ -1,0 +1,11 @@
+.env
+chpp_token.json
+equipos.json
+node_modules/
+*.db
+.DS_Store
+Thumbs.db
+
+obtener_token.py
+obtener_token_manual.py
+promp_inicial.md

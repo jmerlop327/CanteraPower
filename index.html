@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CanteraPower - Local</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>CanteraPower (Local)</h1>
+    <p class="subtitle">Panel de administración</p>
+  </header>
+  <main class="container">
+    <section class="panel admin">
+      <h2>Administración</h2>
+      <div style="margin-top:1rem">
+        <span id="connStatus" class="empty">Comprobando conexión...</span>
+        <a href="/auth/login" id="btnConnect" class="btn btn-secondary">Conectar con Hattrick</a>
+      </div>
+      <div id="adminBox">
+        <div style="margin-bottom:1rem">
+          <input id="seriesID" placeholder="Series ID (grupo)">
+        </div>
+        <div class="controls">
+          <button id="btnScan" class="btn btn-primary">Escaneo</button>
+          <button id="btnGenerate" class="btn btn-primary">Generar web estática</button>
+          <button id="btnPush" class="btn btn-secondary">Publicar en git</button>
+        </div>
+        <div id="grupoInfo" class="empty" style="margin-top:1rem;font-weight:bold;"></div>
+        <div id="loading" class="empty" style="display:none;">Escaneando, por favor espera...</div>
+        <div id="pendientes" class="list"></div>
+        <div id="status" class="empty"></div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
